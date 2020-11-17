@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dadi js</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="container" class="container">
+    <h1>Gioco dei DADI!!</h1>
+    <p><strong>regole del gioco:</strong><br>Clicca sul tasto qui sotto per generare un numero da 1 a 6 in modo randomico. <br>Il computer scegliera a sua volta un numero da 1 a 6 in modo randomico. <br>Se il tuo numero sarà superiore a quello del computer avrai <strong>VINTO!</strong></p>
+    <h3>Buona fortuna e che vinca il migliore!</h3>
+    <label for="user_number">Genera il tuo numero:</label>
+    <button type="button" class="btn btn-default" id="btn_genera">Genera</button>
+    <div id="display_user_numb" class="hidden">
+      <span>Il tuo numero è:</span>
+      <span id="your_number"></span>
+    </div>
+
+
+    <div class="play">
+      <label for="play">Scopri chi ha vinto...</label>
+      <button type="button" class="btn btn-default" id="btn_gioca">Gioca</button>
+      <div id="display_pc_numb" class="hidden">
+        <span>Il numero del pc è:</span>
+        <span id="pc_number"></span>
+      </div>
+      <div id="result" class="fs_60"></div>
+    </div>
+
+    <div id="display_btn_again" class="hidden">
+      <button id="btn_again" type="button" class="btn btn-primary">Try Again!</button>
+    </div>
+
+  </div>
+
+
+
+
+<script src="assets/js/main.js" charset="utf-8"></script>
+</body>
+</html>
